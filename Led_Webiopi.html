@@ -15,21 +15,20 @@
         var content, button;
         content = $("#content");
         
-        button = webiopi().createMacroButton("ledon", "LED ON", "led_on");
+        button = webiopi().createMacroButton("on", "ON", "led_on");
         content.append(button);
         
-        button = webiopi().createMacroButton("ledoff", "LED OFF", "led_off");
+        button = webiopi().createMacroButton("off", "OFF", "led_off");
         content.append(button);    
     });
 </script>
  
 <style type="text/css">
-    button {
-        display:block;
+    button {       
         margin: 5px 5px 5px 5px;
-        width: 200px;
-        height:100px;
-        font-size: 40pt;
+        width: 100px;
+        height:200px;
+        font-size: 2em;
         font-weight: bold;
         color: black;
     }
@@ -39,7 +38,7 @@
 <body>
 <div class="jumbotron">
 	
-  		<h1>RaspberryPi : LED Control!</h1>
+  		<h1>RaspberryPi : LED Control!(WebIOPi)</h1>
  		
 	</div>
 	<div class="container">
