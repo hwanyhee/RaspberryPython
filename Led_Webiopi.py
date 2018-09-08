@@ -4,7 +4,7 @@ led=17
 
 def setup():
 	GPIO.setFunction(led, GPIO.OUT)
-    GPIO.output(led, GPIO.LOW)	
+    	GPIO.output(led, GPIO.LOW)	
 def destroy():    
 	GPIO.setFunction(LED, GPIO.IN)
 @webiopi.macro
