@@ -1,6 +1,6 @@
 import Adafruit_DHT
 import pymysql
-
+import time
 
 sensor = Adafruit_DHT.DHT11
 pin = 4
