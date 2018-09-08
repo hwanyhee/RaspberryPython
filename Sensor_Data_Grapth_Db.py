@@ -4,7 +4,7 @@ import pymysql
 
 sensor = Adafruit_DHT.DHT11
 pin = 4
-url = "http://192.168.0.7:8080/insert?temp="
+
 try:
     
     conn = pymysql.connect(host='localhost',user='iot', password='iot',db='iot_schema', port=3306,charset='utf8',cursorclass=pymysql.cursors.DictCursor)
@@ -24,8 +24,7 @@ try:
        
         time.sleep(15)
 except KeyboardInterrupt:
-    console.log('에러 발생')
-    
+    console.log('에러 발생')    
 finally:
     conn.close()
     cur.close()
