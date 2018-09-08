@@ -17,9 +17,9 @@ try:
         
         if humidity is not None and temperature is not None:
             f = urllib.request.urlopen(url+'{0:0.1f}&humidity={1:0.1f}'.format(temperature, humidity))
-            print(url+str(seq)+'&Temp={0:0.1f}&Humidity={1:0.1f}'.format(temperature, humidity))
+            print(url+'{0:0.1f}&humidity={1:0.1f}'.format(temperature, humidity))
             data = str(f.read())
-            print("data : ", data)
+            print("recieve data : ", data)
             print('Temp={0:0.1f}&Humidity={1:0.1f}'.format(temperature, humidity))
         else:
             print('Failed to get reading. Try again!')
