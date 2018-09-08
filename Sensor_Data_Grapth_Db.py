@@ -24,7 +24,8 @@ try:
        
         time.sleep(15)
 except KeyboardInterrupt:
-    console.log('에러 발생')    
+    
+    console.log('�뿉�윭 諛쒖깮')    
 finally:
     conn.close()
     cur.close()
