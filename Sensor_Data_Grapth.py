@@ -19,7 +19,7 @@ try:
         else:
             print('Failed to get reading. Try again!')       
        
-        time.sleep(15)
+        time.sleep(5)
 except KeyboardInterrupt:
     console.log('에러 발생')
     
