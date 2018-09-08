@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import time
+
 
 GPIO.setmode(GPIO.BCM)
 
@@ -12,11 +12,10 @@ try:
 
         if input == False:
             GPIO.output(6, GPIO.HIGH)
-            #time.sleep(1)
-
+            
         else:
             GPIO.output(6, GPIO.LOW)
-            #time.sleep(1)
+            
 
-except KeyboardInterrupt:
+except KeyboardInterrupt:#ctrl+c
     GPIO.cleanup()
