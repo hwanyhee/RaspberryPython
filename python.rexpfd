@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rexpfd>
+    <destination path="CCH-PC.192.168.0.7:/home/pi/workspace"/>
+    <options createDirectoryStructure="true" createSelectedOnly="false" descriptionFilePath="/RaspberryPython/python.rexpfd" overWriteExistingFiles="true" reviewSynchronize="true" saveSettings="true"/>
+    <selectedElements>
+        <file path="/RaspberryPython/Led.py"/>
+        <file path="/RaspberryPython/LedControllUI.html"/>
+        <file path="/RaspberryPython/Led_Blynk.py"/>
+        <file path="/RaspberryPython/Led_Flask.html"/>
+        <file path="/RaspberryPython/Led_Flask.py"/>
+        <file path="/RaspberryPython/Led_Webiopi.py"/>
+        <file path="/RaspberryPython/python.rexpfd"/>
+        <file path="/RaspberryPython/test.py"/>
+        <folder path="/RaspberryPython/templates"/>
+    </selectedElements>
+</rexpfd>
