@@ -4,12 +4,9 @@ import urllib.request
 import random
 import Adafruit_DHT
 
-
 sensor = Adafruit_DHT.DHT11
 pin = 4
 url = "https://api.thingspeak.com/update?api_key=DD12F8GFJC04CBEO&field1="
-
-
 try:
     while True:
        
