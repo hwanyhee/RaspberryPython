@@ -25,7 +25,7 @@ try:
         time.sleep(15)
 except KeyboardInterrupt:
     
-    print('error')    
+    print('error ')    
 finally:
     conn.close()
     cur.close()
