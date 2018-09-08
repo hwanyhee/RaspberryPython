@@ -11,7 +11,7 @@ try:
         humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)       
         
         if humidity is not None and temperature is not None:
-            #데이타 보내기
+            #�뜲�씠�� 蹂대궡湲�
             f = urllib.request.urlopen(url+'{0:0.1f}&humi={1:0.1f}'.format(temperature, humidity))
            
             print('temp={0:0.1f}&humi={1:0.1f}'.format(temperature, humidity))
@@ -20,5 +20,5 @@ try:
        
         time.sleep(15)
 except KeyboardInterrupt:
-    console.log('에러 발생')
+    print('Error')
     
