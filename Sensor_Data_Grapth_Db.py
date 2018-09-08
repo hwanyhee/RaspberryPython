@@ -20,7 +20,7 @@ try:
              cur.execute('INSERT INTO sensors(temperature,humidity) VALUES(?,?)', (temperature,humidity))
              conn.commit()
         else:
-            print('Failed to get reading. Try again!')       
+            print('Failed to get reading. Try again!')      
        
         time.sleep(15)
 except KeyboardInterrupt:
