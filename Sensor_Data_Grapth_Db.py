@@ -9,7 +9,7 @@ try:
     
     conn = pymysql.connect(host='localhost',user='iot', password='iot',db='iot_schema', port=3306,charset='utf8',cursorclass=pymysql.cursors.DictCursor)
     cur = conn.cursor()  
-    print('cur'+cur)
+  
                    
     while True:
        
@@ -17,7 +17,7 @@ try:
         
         if humidity is not None and temperature is not None:
           
-             cur.execute('INSERT INTO sensors(temperature,humidity) VALUES(?,?)', (temperature,humidity))
+             cur.execute('INSERT INTO sensors(temperature,humidity) VALUES('+str(temperature)+','+str(humidity)+')')
              conn.commit()
         else:
             print('Failed to get reading. Try again!')      
@@ -25,7 +25,7 @@ try:
         time.sleep(15)
 except KeyboardInterrupt:
     
-    print('�뿉�윭 諛쒖깮')    
+    print('error')    
 finally:
     conn.close()
     cur.close()
