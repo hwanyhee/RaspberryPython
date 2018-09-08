@@ -18,6 +18,7 @@ try:
             print('temp={0:0.1f}&humi={1:0.1f}'.format(temperature, humidity))
         else:
             print('Failed to get reading. Try again!')
+            
        
         time.sleep(15)
 except KeyboardInterrupt:
