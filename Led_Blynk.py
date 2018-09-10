@@ -5,7 +5,7 @@ import BlynkLib
 import time
 import RPi.GPIO as GPIO
 #이메일로 받은 토큰을 아래에 추가
-BLYNK_AUTH = '78dfc69279a44402a6dfd11f12d1f43d'
+BLYNK_AUTH = '이메일에서 받은 토큰'
 # Initialize Blynk
 blynk = BlynkLib.Blynk(BLYNK_AUTH)
 # GPIO set
